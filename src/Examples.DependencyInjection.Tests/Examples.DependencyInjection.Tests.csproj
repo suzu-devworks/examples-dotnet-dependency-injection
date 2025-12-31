@@ -1,17 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>$(LatestFramework)</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Examples.DependencyInjection.Tests</RootNamespace>
-    <TargetFramework>net8.0</TargetFramework>
-    <!--
-    This template uses native xUnit.net command line options when using 'dotnet run' and
-    VSTest by default when using 'dotnet test'. For more information on how to enable support
-    for Microsoft Testing Platform, please visit:
-      https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
-    -->
+    <RootNamespace>Examples</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +27,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Examples.DependencyInjection\Examples.DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>
