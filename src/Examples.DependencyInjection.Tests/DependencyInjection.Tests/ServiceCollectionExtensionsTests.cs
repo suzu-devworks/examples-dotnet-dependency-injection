@@ -48,22 +48,22 @@ public partial class ServiceCollectionExtensionsTests
             var singletonInScope1 = scope.ServiceProvider.GetService<DependsOnSingleton>();
             var singletonInScope2 = scope.ServiceProvider.GetService<DependsOnSingleton>();
 
-            Assert.True(object.ReferenceEquals(singletonInScope1, singleton));
-            Assert.True(object.ReferenceEquals(singletonInScope1, singletonInScope2));
+            Assert.Same(singletonInScope1, singleton);
+            Assert.Same(singletonInScope1, singletonInScope2);
 
             // scoped
             var scopedInScope1 = scope.ServiceProvider.GetService<DependsOnScoped>();
             var scopedInScope2 = scope.ServiceProvider.GetService<DependsOnScoped>();
 
-            Assert.False(object.ReferenceEquals(scopedInScope1, scoped));
-            Assert.True(object.ReferenceEquals(scopedInScope1, scopedInScope2));
+            Assert.NotSame(scopedInScope1, scoped);
+            Assert.Same(scopedInScope1, scopedInScope2);
 
             // transient
             var transientInScope1 = scope.ServiceProvider.GetService<DependsOnTransient>();
             var transientInScope2 = scope.ServiceProvider.GetService<DependsOnTransient>();
 
-            Assert.False(object.ReferenceEquals(transientInScope1, transient));
-            Assert.False(object.ReferenceEquals(transientInScope1, transientInScope2));
+            Assert.NotSame(transientInScope1, transient);
+            Assert.NotSame(transientInScope1, transientInScope2);
         }
     }
 }
