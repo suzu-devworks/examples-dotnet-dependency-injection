@@ -1,12 +1,15 @@
 # Examples.DependencyInjection.Autofac.Tests
 
-This is a project for learning Ioc using `Autofac`
-
 ## Table of Contents <!-- omit in toc -->
 
+- [Overview](#overview)
 - [What is Autofac?](#what-is-autofac)
 - [Development](#development)
   - [How the project was initialized](#how-the-project-was-initialized)
+
+## Overview
+
+This is a project for learning Ioc using `Autofac`
 
 ## What is Autofac?
 
@@ -38,8 +41,6 @@ dotnet add package Microsoft.NET.Test.Sdk
 dotnet add package xunit
 dotnet add package xunit.runner.visualstudio
 dotnet add package coverlet.collector
-dotnet add package Moq
-dotnet add package ChainingAssertion.Core.Xunit
 dotnet add package Autofac
 cd ../../
 

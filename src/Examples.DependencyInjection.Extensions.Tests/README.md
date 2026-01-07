@@ -1,12 +1,15 @@
 # Examples.DependencyInjection.Extensions.Tests
 
-This is a project for learning Ioc using `Microsoft.Extensions.DependencyInjection`
-
 ## Table of Contents <!-- omit in toc -->
 
+- [Overview](#overview)
 - [What is Microsoft.Extensions.DependencyInjection?](#what-is-microsoftextensionsdependencyinjection)
 - [Development](#development)
   - [How the project was initialized](#how-the-project-was-initialized)
+
+## Overview
+
+This is a project for learning Ioc using `Microsoft.Extensions.DependencyInjection`
 
 ## What is Microsoft.Extensions.DependencyInjection?
 

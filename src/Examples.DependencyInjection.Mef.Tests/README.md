@@ -1,9 +1,8 @@
 # Examples.DependencyInjection.Mef.Tests
 
-This is a project for learning Ioc using The Managed Extensibility Framework.
-
 ## Table of Contents <!-- omit in toc -->
 
+- [Overview](#overview)
 - [What is MEF?](#what-is-mef)
 - [Attributed programming model](#attributed-programming-model)
 - [A convention-based extension model](#a-convention-based-extension-model)
@@ -11,6 +10,10 @@ This is a project for learning Ioc using The Managed Extensibility Framework.
 - [References](#references)
 - [Development](#development)
   - [How the project was initialized](#how-the-project-was-initialized)
+
+## Overview
+
+This is a project for learning Ioc using The Managed Extensibility Framework.
 
 ## What is MEF?
 
