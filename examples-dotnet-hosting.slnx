@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/Examples.DependencyInjection.Autofac.Tests/Examples.DependencyInjection.Autofac.Tests.csproj" />
     <Project Path="src/Examples.DependencyInjection.Extensions.Tests/Examples.DependencyInjection.Extensions.Tests.csproj" />
     <Project Path="src/Examples.DependencyInjection.Mef.Tests/Examples.DependencyInjection.Mef.Tests.csproj" />
     <Project Path="src/Examples.DependencyInjection.Tests/Examples.DependencyInjection.Tests.csproj" />
